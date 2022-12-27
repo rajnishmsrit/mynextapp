@@ -8,8 +8,7 @@ import {ThemeContext} from '../../providers/ThemeProvider'
 const TitleBar = forwardRef(function TitleBar(props, ref) {
 
     const { theme, setTheme } = useContext(ThemeContext);
-    const className = 'header-' + theme;
-    
+    const className = 'header-' + theme;    
     return (
         <>
             <div className={className}>

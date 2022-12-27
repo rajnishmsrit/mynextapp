@@ -2,10 +2,10 @@ import React, {
   useEffect, 
   useId, 
   useState,
-  useRef,
-  createContext
+  useRef
  } from 'react';
 import TitleBar from './TitleBar';
+import MemoExample from './MemoExample';
 
 const Content:React.FC<{goal:number}> = ({goal}) => {
 
@@ -38,6 +38,7 @@ const Content:React.FC<{goal:number}> = ({goal}) => {
       <div >
         <TitleBar ref={titleElement} titleName="New Year 2023"></TitleBar>
       </div>
+      <MemoExample></MemoExample>
     </>
   ); 
 }
