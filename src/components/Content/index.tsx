@@ -30,13 +30,15 @@ const Content:React.FC<{goal:number}> = ({goal}) => {
 
   return(
     <>
+      <h2>Hello People of world!</h2>
+
       <input type="text" id="fname" name="fname"></input>
       <div>ID : {id}</div>
       <div>Counter : {counter}</div>
       <button onClick={handleClick}>+ Counter</button>
       <button onClick={handleReset}>Reset counter</button>
       <div >
-        <TitleBar ref={titleElement} titleName="New Year 2023"></TitleBar>
+        <TitleBar ref={titleElement} titleName="New Year 2022"></TitleBar>
       </div>
     </>
   ); 
